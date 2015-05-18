@@ -1,0 +1,457 @@
+---
+layout: default
+category: page
+menu: task
+submenu: 
+pluginscss: [
+    "plugins/jquery-ui/css/jquery-ui.css",
+    "plugins/select2/css/select2.css"
+]
+pluginsjs: [
+    "plugins/shuffle/js/jquery.shuffle.js",
+    "plugins/jquery-ui/js/jquery-ui.js",
+    "plugins/jquery-ui/js/jquery-ui-touch.js",
+    "plugins/select2/js/select2.js",
+    "plugins/parsley/js/parsley.js"
+]
+pagejs: [
+    "javascript/backend/pages/task.js"
+]
+---
+
+<!-- Page Header -->
+            <div class="page-header page-header-block pb0">
+                <div class="pb15">
+                    <div class="page-header-section">
+                        <h4 class="title semibold">Tasks</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar clearfix">
+                            <div class="col-sm-2">
+                                <span class="toolbar-label semibold mr5">Sort : </span>
+                            </div>
+                            <div class="col-sm-5">
+                                <select class="form-control" id="shuffle-sort">
+                                    <option value="">Default</option>
+                                    <option value="priority">Priority</option>
+                                    <option value="date-due">Due Date</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-5">
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#form-task"><span class="ico-plus-circle2"></span> New Task</button>
+                            </div>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                </div>
+
+                <!-- add new task form -->
+                <form class="collapse" id="form-task" data-parsley-validate>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="control-label">Task Name</label>
+                                <input type="text" name="task-name" class="form-control" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <label class="control-label">Participant</label>
+                                    <select name="participant" multiple required>
+                                        <option value="1">Ginger Clemons</option>
+                                        <option value="2">Harrison Black</option>
+                                        <option value="3">Carlos Richard</option>
+                                        <option value="4">James Cooke</option>
+                                        <option value="5">Vanna Ayers</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="control-label">Due Date</label>
+                                <input type="text" name="due-date" class="form-control" required>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="control-label">Priority</label>
+                                <select class="form-control" name="priority" required>
+                                    <option value="">Select</option>
+                                    <option value="1">High</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Low</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="control-label">Project</label>
+                                <select class="form-control" name="project" required>
+                                    <option value="">Select</option>
+                                    <option value="1">MongoDB Migration</option>
+                                    <option value="2">Wordpress Installation</option>
+                                    <option value="3">LESS And SASS Support</option>
+                                    <option value="4">Gallery pages</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="control-label">Category</label>
+                                <select class="form-control" name="category" required>
+                                    <option value="">Select</option>
+                                    <option value="1">Development</option>
+                                    <option value="2">Programming</option>
+                                    <option value="3">UI/UX Design</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="reset" class="btn btn-default">Reset</button>
+                        <button type="submit" class="btn btn-success">Add Task</button>
+                    </div>
+                </form>
+                <!--/ add new task form -->
+            </div>
+            <!-- Page Header -->
+
+            <!-- START Template Container -->
+            <div class="container-fluid">
+                <!-- START row -->
+                <div class="row" id="shuffle-grid">
+                    <!-- #task1 -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 task" data-date-due="2015-11-28" data-priority="3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-left">
+                                    <span class="checkbox custom-checkbox custom-checkbox-inverse">
+                                        <input type="checkbox" name="customcheckbox1" id="customcheckbox1">
+                                        <label for="customcheckbox1">&nbsp;&nbsp;&nbsp;</label>
+                                    </span>
+                                </div>
+                                <!--/ panel toolbar -->
+                                <h3 class="panel-title ellipsis" style="width:100%;">Suspendisse eleifend. Cras sed leo. Cras vehicula aliquet libero. Integer in</h3>
+                            </div>
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Project : </span>&nbsp;&nbsp;&nbsp;<strong>MongoDB Migration</strong>
+                                    </div>
+                                </div>
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Category : </span>&nbsp;&nbsp;&nbsp;<strong>Development</strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="text-muted">Priority : </span>&nbsp;&nbsp;&nbsp;<span class="badge badge-success">low</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="ico-calendar3"></span>&nbsp;&nbsp;<span class="text-muted">Due : </span>&nbsp;&nbsp;&nbsp;<strong>2015-11-28</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ panel body -->
+                            <!-- panel footer -->
+                            <div class="panel-footer">
+                                <ul class="list-table">
+                                    <li>
+                                        <div class="img-group img-group-stack">
+                                            <img src="{{ site.assets }}image/avatar/avatar1.jpg" class="img-circle" alt="" title="Doris Wolf">
+                                            <img src="{{ site.assets }}image/avatar/avatar2.jpg" class="img-circle" alt="" title="Ori Duke">
+                                            <img src="{{ site.assets }}image/avatar/avatar3.jpg" class="img-circle" alt="" title="Kevyn Carrillo">
+                                        </div>
+                                    </li>
+                                    <li class="text-right">
+                                        <p class="nm"><a href="javascript:void(0);" class="semibold">3 people</a> assigned</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel footer -->
+                        </div>
+                    </div>
+                    <!--/ #task1 -->
+
+                    <!-- #task2 -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 task" data-date-due="2015-11-24" data-priority="2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-left">
+                                    <span class="checkbox custom-checkbox custom-checkbox-inverse">
+                                        <input type="checkbox" name="customcheckbox2" id="customcheckbox2">
+                                        <label for="customcheckbox2">&nbsp;&nbsp;&nbsp;</label>
+                                    </span>
+                                </div>
+                                <!--/ panel toolbar -->
+                                <h3 class="panel-title ellipsis" style="width:100%;">Excepteur sint occaecat cupidatat non laborum.</h3>
+                            </div>
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Project : </span>&nbsp;&nbsp;&nbsp;<strong>Wordpress Installation</strong>
+                                    </div>
+                                </div>
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Category : </span>&nbsp;&nbsp;&nbsp;<strong>Programming</strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="text-muted">Priority : </span>&nbsp;&nbsp;&nbsp;<span class="badge badge-warning">medium</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="ico-calendar3"></span>&nbsp;&nbsp;<span class="text-muted">Due : </span>&nbsp;&nbsp;&nbsp;<strong>2015-11-24</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ panel body -->
+                            <!-- panel footer -->
+                            <div class="panel-footer">
+                                <ul class="list-table">
+                                    <li>
+                                        <div class="img-group img-group-stack">
+                                            <img src="{{ site.assets }}image/avatar/avatar4.jpg" class="img-circle" alt="" title="Lamar Gutierrez">
+                                            <img src="{{ site.assets }}image/avatar/avatar7.jpg" class="img-circle" alt="" title="Lars Raymond">
+                                            <span class="more img-circle">+2</span>
+                                        </div>
+                                    </li>
+                                    <li class="text-right">
+                                        <p class="nm"><a href="javascript:void(0);" class="semibold">4 people</a> assigned</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel footer -->
+                        </div>
+                    </div>
+                    <!--/ #task2 -->
+
+                    <!-- #task3 -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 task" data-date-due="2015-10-19" data-priority="1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-left">
+                                    <span class="checkbox custom-checkbox custom-checkbox-inverse">
+                                        <input type="checkbox" name="customcheckbox3" id="customcheckbox3">
+                                        <label for="customcheckbox3">&nbsp;&nbsp;&nbsp;</label>
+                                    </span>
+                                </div>
+                                <!--/ panel toolbar -->
+                                <h3 class="panel-title ellipsis" style="width:100%;">Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus</h3>
+                            </div>
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Project : </span>&nbsp;&nbsp;&nbsp;<strong>LESS And SASS Support</strong>
+                                    </div>
+                                </div>
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Category : </span>&nbsp;&nbsp;&nbsp;<strong>Programming</strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="text-muted">Priority : </span>&nbsp;&nbsp;&nbsp;<span class="badge badge-danger">high</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="ico-calendar3"></span>&nbsp;&nbsp;<span class="text-muted">Due : </span>&nbsp;&nbsp;&nbsp;<strong>2015-10-19</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ panel body -->
+                            <!-- panel footer -->
+                            <div class="panel-footer">
+                                <ul class="list-table">
+                                    <li>
+                                        <div class="img-group img-group-stack">
+                                            <img src="{{ site.assets }}image/avatar/avatar6.jpg" class="img-circle" alt="" title="Kevin Alston">
+                                        </div>
+                                    </li>
+                                    <li class="text-right">
+                                        <p class="nm"><a href="javascript:void(0);" class="semibold">Kevin Alston</a> assigned</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel footer -->
+                        </div>
+                    </div>
+                    <!--/ #task3 -->
+
+                    <!-- #task4 -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 task" data-date-due="2015-12-06" data-priority="3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-left">
+                                    <span class="checkbox custom-checkbox custom-checkbox-inverse">
+                                        <input type="checkbox" name="customcheckbox4" id="customcheckbox4">
+                                        <label for="customcheckbox4">&nbsp;&nbsp;&nbsp;</label>
+                                    </span>
+                                </div>
+                                <!--/ panel toolbar -->
+                                <h3 class="panel-title ellipsis" style="width:100%;">Aliquam vulputate ullamcorper magna</h3>
+                            </div>
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Project : </span>&nbsp;&nbsp;&nbsp;<strong>LESS And SASS Support</strong>
+                                    </div>
+                                </div>
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Category : </span>&nbsp;&nbsp;&nbsp;<strong>UI/UX Design</strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="text-muted">Priority : </span>&nbsp;&nbsp;&nbsp;<span class="badge badge-success">low</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="ico-calendar3"></span>&nbsp;&nbsp;<span class="text-muted">Due : </span>&nbsp;&nbsp;&nbsp;<strong>2015-12-06</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ panel body -->
+                            <!-- panel footer -->
+                            <div class="panel-footer">
+                                <ul class="list-table">
+                                    <li>
+                                        <div class="img-group img-group-stack">
+                                            <img src="{{ site.assets }}image/avatar/avatar8.jpg" class="img-circle" alt="" title="Owen Duff">
+                                            <img src="{{ site.assets }}image/avatar/avatar6.jpg" class="img-circle" alt="" title="Kevin Alston">
+                                        </div>
+                                    </li>
+                                    <li class="text-right">
+                                        <p class="nm"><a href="javascript:void(0);" class="semibold">2 people</a> assigned</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel footer -->
+                        </div>
+                    </div>
+                    <!--/ #task4 -->
+
+                    <!-- #task5 -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 task" data-date-due="2015-06-26" data-priority="2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-left">
+                                    <span class="checkbox custom-checkbox custom-checkbox-inverse">
+                                        <input type="checkbox" name="customcheckbox5" id="customcheckbox5">
+                                        <label for="customcheckbox5">&nbsp;&nbsp;&nbsp;</label>
+                                    </span>
+                                </div>
+                                <!--/ panel toolbar -->
+                                <h3 class="panel-title ellipsis" style="width:100%;">Aenean sed pede nec ante blandit viverra</h3>
+                            </div>
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Project : </span>&nbsp;&nbsp;&nbsp;<strong>Wordpress Installation</strong>
+                                    </div>
+                                </div>
+                                <div class="row mb15">
+                                    <div class="col-xs-12">
+                                        <span class="text-muted">Category : </span>&nbsp;&nbsp;&nbsp;<strong>Development</strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="text-muted">Priority : </span>&nbsp;&nbsp;&nbsp;<span class="badge badge-warning">medium</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="ico-calendar3"></span>&nbsp;&nbsp;<span class="text-muted">Due : </span>&nbsp;&nbsp;&nbsp;<strong>2015-06-26</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ panel body -->
+                            <!-- panel footer -->
+                            <div class="panel-footer">
+                                <ul class="list-table">
+                                    <li>
+                                        <div class="img-group img-group-stack">
+                                            <img src="{{ site.assets }}image/avatar/avatar1.jpg" class="img-circle" alt="" title="Doris Wolf">
+                                            <img src="{{ site.assets }}image/avatar/avatar2.jpg" class="img-circle" alt="" title="Ori Duke">
+                                            <img src="{{ site.assets }}image/avatar/avatar3.jpg" class="img-circle" alt="" title="Kevyn Carrillo">
+                                        </div>
+                                    </li>
+                                    <li class="text-right">
+                                        <p class="nm"><a href="javascript:void(0);" class="semibold">3 people</a> assigned</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel footer -->
+                        </div>
+                    </div>
+                    <!--/ #task5 -->
+                </div>
+                <!--/ END row -->
+            </div>
+            <!--/ END Template Container -->
+
+            <!-- mustache template: used for adding the `.task` -->
+            <script id="task-template" type="x-tmpl-mustache">
+                {% raw  %}
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 task" data-date-due="{{dueDate}}" data-priority="{{priority}}">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-toolbar text-left">
+                                <span class="checkbox custom-checkbox custom-checkbox-inverse">
+                                    <input type="checkbox" name="customcheckbox{{checkboxId}}" id="customcheckbox{{checkboxId}}">
+                                    <label for="customcheckbox{{checkboxId}}">&nbsp;&nbsp;&nbsp;</label>
+                                </span>
+                            </div>
+                            <h3 class="panel-title ellipsis" style="width:100%;">{{taskName}}</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row mb15">
+                                <div class="col-xs-12">
+                                    <span class="text-muted">Project : </span>&nbsp;&nbsp;&nbsp;<strong>{{projectText}}</strong>
+                                </div>
+                            </div>
+                            <div class="row mb15">
+                                <div class="col-xs-12">
+                                    <span class="text-muted">Category : </span>&nbsp;&nbsp;&nbsp;<strong>{{categoryText}}</strong>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="text-muted">Priority : </span>&nbsp;&nbsp;&nbsp;<span class="badge badge-{{badgeContextual}}">{{priorityText}}</span>
+                                </div>
+                                <div class="col-xs-6">
+                                    <span class="ico-calendar3"></span>&nbsp;&nbsp;<span class="text-muted">Due : </span>&nbsp;&nbsp;&nbsp;<strong>{{dueDate}}</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <ul class="list-table">
+                                <li>
+                                    <div class="img-group img-group-stack">
+                                        {{#participant}}
+                                        <img src="../image/avatar/{{avatar}}.jpg" class="img-circle" alt="" title="{{name}}">
+                                        {{/participant}}
+                                    </div>
+                                </li>
+                                <li class="text-right">
+                                    <p class="nm"><a href="javascript:void(0);" class="semibold">{{totalParticipant}} people</a> assigned</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endraw  %}
+            </script>
+            <!--/ mustache template -->

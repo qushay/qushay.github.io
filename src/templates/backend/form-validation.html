@@ -1,0 +1,348 @@
+---
+layout: default
+category: form
+menu: validation
+submenu:
+pluginscss: [
+    "plugins/selectize/css/selectize.css"
+]
+pluginsjs: [
+    "plugins/selectize/js/selectize.js",
+    "plugins/parsley/js/parsley.js"
+]
+pagejs: [
+    "javascript/backend/forms/validation.js"
+]
+---
+
+<!-- START Template Container -->
+            <div class="container-fluid">
+                <!-- Page Header -->
+                <div class="page-header page-header-block">
+                    <div class="page-header-section">
+                        <h4 class="title semibold">Form validation</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="javascript:void(0);">Form</a></li>
+                                <li class="active">Validation</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                </div>
+                <!-- Page Header -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="panel panel-default" action="" data-parsley-validate>
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="ico-tshirt mr5"></i> T-shirt order sample</h3>
+                            </div>               
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label">Which one do you want? <span class="text-danger">*</span></label>
+                                            <select name="type" class="form-control" required>
+                                                <option value="">Select</option>
+                                                <option value="1">Ninja shirt</option>
+                                                <option value="2">Pirate shirt</option>
+                                                <option value="3">Bobo shirt</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label">Size <span class="text-danger">*</span></label>
+                                            <select name="size" class="form-control" required>
+                                                <option value="">Select</option>
+                                                <option value="1">S</option>
+                                                <option value="2">M</option>
+                                                <option value="3">L</option>
+                                                <option value="3">XL</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="control-label">Color <span class="text-danger">*</span></label>
+                                            <select name="color" class="form-control" required>
+                                                <option value="">Select</option>
+                                                <option value="1">Red</option>
+                                                <option value="2">Green</option>
+                                                <option value="3">Yellow</option>
+                                                <option value="3">Purple</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label">Name <span class="text-danger">*</span></label>
+                                            <input name="name" type="text" class="form-control" required>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="control-label">Email <span class="text-danger">*</span></label>
+                                            <input name="email" type="text" class="form-control" data-parsley-trigger="change" data-parsley-type="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label class="control-label">Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 mb10">
+                                            <input name="street" type="text" class="form-control" placeholder="Street Address">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 mb10">
+                                            <input name="addressline" type="text" class="form-control" placeholder="Address Line 2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 mb10">
+                                            <input name="city" type="text" class="form-control" placeholder="City">
+                                        </div>
+                                        <div class="col-sm-6 mb10">
+                                            <input name="state" type="text" class="form-control" placeholder="State / Province / Region">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox custom-checkbox">  
+                                        <input type="checkbox" name="gift" id="giftcheckbox" value="1" data-parsley-mincheck="1" required>  
+                                        <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button type="submit" class="btn btn-primary">Proceed</button>
+                                <button type="reset" class="btn btn-inverse">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6">
+                        <form class="panel panel-default" action="" data-parsley-validate>
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="ico-coin mr5"></i> Donation form sample</h3>
+                            </div>               
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label class="control-label">Name <span class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" name="fname" class="form-control" placeholder="First" required>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="lname" class="form-control" placeholder="Last" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label class="control-label">If you are a member, please enter your member number here:</label>
+                                            <input type="text" name="member" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label">Donation amount</label>
+                                            <select name="type" class="form-control">
+                                                <option value="">Select</option>
+                                                <option value="1">$10.00</option>
+                                                <option value="2">$20.00</option>
+                                                <option value="3">$30.00</option>
+                                                <option value="3">$40.00</option>
+                                                <option value="3">$50.00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label class="control-label">Email <span class="text-danger">*</span></label>
+                                            <input name="email" type="text" class="form-control" data-parsley-type="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox custom-checkbox">  
+                                                <input type="checkbox" name="checkbox1" id="checkbox1" value="1">  
+                                                <label for="checkbox1">&nbsp;&nbsp;Make my donation anonymously.</label>   
+                                            </div>
+                                            <div class="checkbox custom-checkbox pt10">  
+                                                <input type="checkbox" name="checkbox2" id="checkbox2" value="2">  
+                                                <label for="checkbox2">&nbsp;&nbsp;Sign me up for newsletter.</label>   
+                                            </div>
+                                            <div class="checkbox custom-checkbox pt10">  
+                                                <input type="checkbox" name="checkbox3" id="checkbox3" value="3">  
+                                                <label for="checkbox3">&nbsp;&nbsp;I wish to help with the fundraising.</label>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label class="control-label">Additional comment</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button type="submit" class="btn btn-primary">Proceed</button>
+                                <button type="reset" class="btn btn-inverse">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="panel panel-color-top panel-default form-horizontal form-bordered" action="" data-parsley-validate>
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Validator List</h3>
+                            </div>               
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Required</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="required" class="form-control" required>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>required</code><br>
+                                        <code>data-parsley-required</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Email</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="email" class="form-control" data-parsley-type="email">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-type="email"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Number</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="number" class="form-control" data-parsley-type="number">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-type="number"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Integer</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="integer" class="form-control" data-parsley-type="integer">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-type="integer"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Digits</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="digits" class="form-control" data-parsley-type="digits">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-type="digits"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Alphanum</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="alphanum" class="form-control" data-parsley-type="alphanum">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-type="alphanum"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Url</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="url" class="form-control" data-parsley-type="url">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-type="url"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Minlength</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="minlength" class="form-control" data-parsley-minlength="6">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-minlength="6"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Maxlength</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="maxlength" class="form-control" data-parsley-maxlength="10">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-maxlength="10"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Length</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="length" class="form-control" data-parsley-length="[6, 10]">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-length="[6, 10]"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Min</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="min" class="form-control" data-parsley-min="6">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-min="6"</code>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Max</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="max" class="form-control" data-parsley-max="6">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <code>data-parsley-max="6"</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button type="submit" class="btn btn-success">Test Validation</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--/ END row -->
+            </div>
+            <!--/ END Template Container -->

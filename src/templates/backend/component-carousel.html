@@ -1,0 +1,522 @@
+---
+layout: default
+category: component
+menu: carousel
+submenu: 
+pluginscss: [
+    "plugins/owl/css/owl-carousel.css"
+]
+pluginsjs: [
+    "plugins/owl/js/owl.carousel.js"
+]
+pagejs: [
+    "javascript/backend/components/carousel.js"
+]
+---
+
+<!-- START Template Container -->
+            <div class="container-fluid">
+                <!-- Page Header -->
+                <div class="page-header page-header-block">
+                    <div class="page-header-section">
+                        <h4 class="title semibold">Carousel</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="javascript:void(0);">Component</a></li>
+                                <li class="active">Carousel</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                </div>
+                <!-- Page Header -->
+
+                <!-- START Row -->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5 class="semibold mt0 mb5">Default</h5>
+                        <p class="nm text-default">In order for the {{ site.assets }}images to auto fit to slider containers use width 100% on <img>. Check CSS below</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <!-- example 1 -->
+                        <div class="owl-carousel" id="default">
+                            <!-- item #1 -->
+                            <div class="item panel no-border">
+                                <div class="panel-body text-center">
+                                    <img src="{{ site.assets }}image/icons/viralmarketing.png" alt="viral" height="90px">
+                                    <h4 class="semibold mb5">Viral Marketing</h4>
+                                    <p class="nm text-muted">Excepteur sint occaecat</p>
+                                </div>
+                            </div>
+                            <!--/ item #1 -->
+                            <!-- item #2 -->
+                            <div class="item panel no-border">
+                                <div class="panel-body text-center">
+                                    <img src="{{ site.assets }}image/icons/socialmediamarketing.png" alt="social" height="90px">
+                                    <h4 class="semibold mb5">Social Marketing</h4>
+                                    <p class="nm text-muted">Excepteur sint occaecat</p>
+                                </div>
+                            </div>
+                            <!--/ item #2 -->
+                            <!-- item #3 -->
+                            <div class="item panel no-border">
+                                <div class="panel-body text-center">
+                                    <img src="{{ site.assets }}image/icons/seoconsulting.png" alt="seo-consulting" height="90px">
+                                    <h4 class="semibold mb5">SEO Consulting</h4>
+                                    <p class="nm text-muted">Excepteur sint occaecat</p>
+                                </div>
+                            </div>
+                            <!--/ item #3 -->
+                            <!-- item #4 -->
+                            <div class="item panel no-border">
+                                <div class="panel-body text-center">
+                                    <img src="{{ site.assets }}image/icons/socialengagement.png" alt="social-engagement" height="90px">
+                                    <h4 class="semibold mb5">Social Engagement</h4>
+                                    <p class="nm text-muted">Excepteur sint occaecat</p>
+                                </div>
+                            </div>
+                            <!--/ item #4 -->
+                            <!-- item #5 -->
+                            <div class="item panel no-border">
+                                <div class="panel-body text-center">
+                                    <img src="{{ site.assets }}image/icons/videomarketing.png" alt="video-marketing" height="90px">
+                                    <h4 class="semibold mb5">Video Marketing</h4>
+                                    <p class="nm text-muted">Excepteur sint occaecat</p>
+                                </div>
+                            </div>
+                            <!--/ item #5 -->
+                            <!-- item #6 -->
+                            <div class="item panel no-border">
+                                <div class="panel-body text-center">
+                                    <img src="{{ site.assets }}image/icons/websiteoptimization.png" alt="website-optimization" height="90px">
+                                    <h4 class="semibold mb5">Website Optimization</h4>
+                                    <p class="nm text-muted">Excepteur sint occaecat</p>
+                                </div>
+                            </div>
+                            <!--/ item #6 -->
+                            <!-- item #7 -->
+                            <div class="item panel no-border">
+                                <div class="panel-body text-center">
+                                    <img src="{{ site.assets }}image/icons/marketresearch.png" alt="market-research" height="90px">
+                                    <h4 class="semibold mb5">Market Research</h4>
+                                    <p class="nm text-muted">Excepteur sint occaecat</p>
+                                </div>
+                            </div>
+                            <!--/ item #7 -->
+                        </div>
+                        <!--/ example 1 -->
+                    </div>
+                </div>
+                <!--/ END Row -->
+
+                <hr><!-- horizontal line -->
+
+                <!-- START Row -->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5 class="semibold mt0 mb5">Auto play</h5>
+                        <p class="nm text-default">Change to any integrer for example <code>autoPlay : 5000</code> to play every 5 seconds. If you set <code>autoPlay: true</code> default speed will be 5 seconds.</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <!-- example 2 -->
+                        <div class="owl-carousel" id="auto-play">
+                            <!-- thumbnail #1 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background1.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img src="{{ site.assets }}image/background/400x400/background1.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #1 -->
+
+                            <!-- thumbnail #2 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background2.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img src="{{ site.assets }}image/background/400x400/background2.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #2 -->
+
+                            <!-- thumbnail #3 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background3.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img src="{{ site.assets }}image/background/400x400/background3.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #3 -->
+
+                            <!-- thumbnail #4 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background4.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img src="{{ site.assets }}image/background/400x400/background4.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #4 -->
+
+                            <!-- thumbnail #5 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background5.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img src="{{ site.assets }}image/background/400x400/background5.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #5 -->
+
+                            <!-- thumbnail #6 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background6.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img src="{{ site.assets }}image/background/400x400/background6.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #6 -->
+
+                            <!-- thumbnail #7 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background7.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img src="{{ site.assets }}image/background/400x400/background7.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #7 -->
+                        </div>
+                        <!--/ example 2 -->
+                    </div>
+                </div>
+                <!--/ END Row -->
+
+                <hr><!-- horizontal line -->
+
+                <!-- START Row -->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5 class="semibold mt0 mb5">Lazy load</h5>
+                        <p class="nm text-default">Delays loading of {{ site.assets }}images. {{ site.assets }}images outside of viewport wont be loaded before user scrolls to them. Great for mobile devices to speed up page loadings.</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <!-- example 3 -->
+                        <div class="owl-carousel" id="lazy-load">
+                            <!-- thumbnail #1 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background1.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img class="lazyOwl" data-src="{{ site.assets }}image/background/400x400/background1.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #1 -->
+
+                            <!-- thumbnail #2 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background2.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img class="lazyOwl" data-src="{{ site.assets }}image/background/400x400/background2.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #2 -->
+
+                            <!-- thumbnail #3 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background3.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img class="lazyOwl" data-src="{{ site.assets }}image/background/400x400/background3.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #3 -->
+
+                            <!-- thumbnail #4 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background4.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img class="lazyOwl" data-src="{{ site.assets }}image/background/400x400/background4.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #4 -->
+
+                            <!-- thumbnail #5 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background5.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img class="lazyOwl" data-src="{{ site.assets }}image/background/400x400/background5.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #5 -->
+
+                            <!-- thumbnail #6 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background6.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img class="lazyOwl" data-src="{{ site.assets }}image/background/400x400/background6.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #6 -->
+
+                            <!-- thumbnail #7 -->
+                            <div class="item thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-danger" title="love this picture"><i class="ico-heart6"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <!-- meta -->
+                                    <span class="meta bottom darken">
+                                        <h5 class="nm semibold">background7.jpg</h5>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img class="lazyOwl" data-src="{{ site.assets }}image/background/400x400/background7.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail #7 -->
+                        </div>
+                        <!--/ example 3 -->
+                    </div>
+                </div>
+                <!--/ END Row -->
+
+                <hr><!-- horizontal line -->
+
+                <!-- START Row -->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5 class="semibold mt0 mb5">One slide</h5>
+                        <p class="nm text-default">Display one item per slide. Great for features showcase</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <!-- example 4 -->
+                        <div class="panel nm no-border">
+                            <div class="panel-body owl-carousel" id="one-slide">
+                                <!-- slide #1 -->
+                                <div class="item table-layout">
+                                    <div class="col-sm-3 text-center">
+                                        <img src="{{ site.assets }}image/icons/affiliatemarketing.png" alt="affiliate-marketing" width="100">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h4>Affiliate Marketing</h4>
+                                        <p class="text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur.</p>
+                                        <a href="javascript:void(0);">Learn more&#8230;</a>
+                                    </div>
+                                </div>
+                                <!--/ slide #1 -->
+                                <!-- slide #2 -->
+                                <div class="item table-layout">
+                                    <div class="col-sm-3 text-center">
+                                        <img src="{{ site.assets }}image/icons/costperimpression.png" alt="cost-per-impression" width="100">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h4>Cost Per Impression</h4>
+                                        <p class="text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur.</p>
+                                        <a href="javascript:void(0);">Learn more&#8230;</a>
+                                    </div>
+                                </div>
+                                <!--/ slide #2 -->
+                                <!-- slide #3 -->
+                                <div class="item table-layout">
+                                    <div class="col-sm-3 text-center">
+                                        <img src="{{ site.assets }}image/icons/spidertool.png" alt="spider-tool" width="100">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h4>Spider Tool</h4>
+                                        <p class="text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur.</p>
+                                        <a href="javascript:void(0);">Learn more&#8230;</a>
+                                    </div>
+                                </div>
+                                <!--/ slide #3 -->
+                            </div>
+                        </div>
+                        <!--/ example 4 -->
+                    </div>
+                </div>
+                <!--/ END Row -->
+            </div>
+            <!--/ END Template Container -->

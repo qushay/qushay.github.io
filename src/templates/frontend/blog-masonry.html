@@ -1,0 +1,335 @@
+---
+layout: default
+category: blog
+menu: large
+submenu:
+pluginscss: [
+    "plugins/magnific/css/magnific.css",
+    "plugins/owl/css/owl-carousel.css"
+]
+pluginsjs: [
+    "plugins/magnific/js/jquery.magnific-popup.js",
+    "plugins/owl/js/owl.carousel.js",
+    "plugins/shuffle/js/jquery.shuffle.js"
+]
+pagejs: [
+    "javascript/frontend/pages/blog.js"
+]
+---
+
+<!-- START page header -->
+            <section class="page-header page-header-block nm">
+                <!-- pattern -->
+                <div class="pattern pattern9"></div>
+                <!--/ pattern -->
+                <div class="container pt15 pb15">
+                    <div class="page-header-section">
+                        <h4 class="title">Blog Masonry</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="javascript:void(0);">Blog</a></li>
+                                <li class="active">Masonry</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+            <!--/ END page header -->
+
+            <!-- START Blog Content -->
+            <section class="section">
+                <div class="container">
+                    <!-- START Row -->
+                    <div class="row" id="shuffle-grid">
+                        <!-- Blog post #1 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel no-border overflow-hidden">
+                                <!-- Content -->
+                                <section class="panel-body">
+                                    <!-- heading -->
+                                    <h4 class="section-title font-alt mt0 ellipsis">Fusce mollis. Duis sit amet diam eu</h4>
+                                    <!--/ heading -->
+
+                                    <!-- text -->
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat&#8230;</p>
+                                    <!--/ text -->
+
+                                    <!-- Meta & button -->
+                                    <!-- meta -->
+                                    <p class="meta mb15">
+                                        <a href="javascript:void(0);">Feb 28, 2015</a><!-- date -->
+                                        <span class="text-muted mr5 ml5">&#8226;</span>
+                                        <span class="text-muted">By </span><a href="javascript:void(0);">Dexter Holmes</a><!-- author -->
+                                    </p>
+                                    <!--/ meta -->
+                                    <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+                                    <!-- Meta & button -->
+                                </section>
+                                <!--/ Content -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #1 -->
+
+                        <!-- Blog post #2 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel no-border overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="javascript:void(0);" class="btn btn-danger"><i class="ico-heart6"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="{{ site.assets }}image/background/blog/placeholder.jpg" data-src="{{ site.assets }}image/background/blog/blog1.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+                                <!-- Content -->
+                                <section class="panel-body">
+                                    <!-- heading -->
+                                    <h4 class="section-title font-alt mt0 ellipsis">Vivamus non lorem vitae odio sagittis semper.</h4>
+                                    <!--/ heading -->
+
+                                    <!-- text -->
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat&#8230;</p>
+                                    <!--/ text -->
+
+                                    <!-- Meta & button -->
+                                    <!-- meta -->
+                                    <p class="meta mb15">
+                                        <a href="javascript:void(0);">Oct 8, 2013</a><!-- date -->
+                                        <span class="text-muted mr5 ml5">&#8226;</span>
+                                        <span class="text-muted">By </span><a href="javascript:void(0);">Uriel Waters</a><!-- author -->
+                                    </p>
+                                    <!--/ meta -->
+                                    <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+                                    <!-- Meta & button -->
+                                </section>
+                                <!--/ Content -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #2 -->
+
+                        <!-- Blog post #3 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel no-border overflow-hidden">
+                                <!-- Owl Carousel -->
+                                <header id="gallery-post" class="owl-carousel">
+                                    <div class="image"><img src="{{ site.assets }}image/background/blog/blog2.jpg" height="260px"></div>
+                                    <div class="image"><img src="{{ site.assets }}image/background/blog/blog3.jpg" height="260px"></div>
+                                    <div class="image"><img src="{{ site.assets }}image/background/blog/blog4.jpg" height="260px"></div>
+                                </header>
+                                <!--/ Owl Carousel -->
+
+                                <!-- Content -->
+                                <section class="panel-body">
+                                    <!-- heading -->
+                                    <h4 class="section-title font-alt mt0 ellipsis">Donec vitae erat vel pede blandit congue.</h4>
+                                    <!--/ heading -->
+
+                                    <!-- text -->
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat&#8230;</p>
+                                    <!--/ text -->
+
+                                    <!-- Meta & button -->
+                                    <!-- meta -->
+                                    <p class="meta mb15">
+                                        <a href="javascript:void(0);">Sep 21, 2014</a><!-- date -->
+                                        <span class="text-muted mr5 ml5">&#8226;</span>
+                                        <span class="text-muted">By </span><a href="javascript:void(0);">Ima Mack</a><!-- author -->
+                                    </p>
+                                    <!--/ meta -->
+                                    <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+                                    <!-- Meta & button -->
+                                </section>
+                                <!--/ Content -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #3 -->
+
+                        <!-- Blog post #4 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel no-border overflow-hidden">
+                                <!-- Content -->
+                                <section class="panel-body">
+                                    <!-- heading -->
+                                    <h4 class="section-title font-alt mt0 ellipsis">Phasellus vitae mauris sit amet lorem semper auctor.</h4>
+                                    <!--/ heading -->
+
+                                    <!-- text -->
+                                    <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                    <!--/ text -->
+
+                                    <!-- Meta & button -->
+                                    <!-- meta -->
+                                    <p class="meta mb15">
+                                        <a href="javascript:void(0);">Apr 25, 2014</a><!-- date -->
+                                        <span class="text-muted mr5 ml5">&#8226;</span>
+                                        <span class="text-muted">By </span><a href="javascript:void(0);">Quon Hayden</a><!-- author -->
+                                    </p>
+                                    <!--/ meta -->
+                                    <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+                                    <!-- Meta & button -->
+                                </section>
+                                <!--/ Content -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #4 -->
+
+                        <!-- Blog post #5 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel no-border overflow-hidden">
+                                <!-- Iframe container -->
+                                <div class="iframe-container">
+                                    <iframe src="//player.vimeo.com/video/7449107" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+                                </div>
+                                <!--/ Iframe container -->
+
+                                <!-- Content -->
+                                <section class="panel-body">
+                                    <!-- heading -->
+                                    <h4 class="section-title font-alt mt0 ellipsis">Tempus eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi.</h4>
+                                    <!--/ heading -->
+
+                                    <!-- text -->
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat&#8230;</p>
+                                    <!--/ text -->
+
+                                    <!-- Meta & button -->
+                                    <!-- meta -->
+                                    <p class="meta mb15">
+                                        <a href="javascript:void(0);">Oct 23, 2014</a><!-- date -->
+                                        <span class="text-muted mr5 ml5">&#8226;</span>
+                                        <span class="text-muted">By </span><a href="javascript:void(0);">Mollie Beck</a><!-- author -->
+                                    </p>
+                                    <!--/ meta -->
+                                    <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+                                    <!-- Meta & button -->
+                                </section>
+                                <!--/ Content -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #5 -->
+
+                        <!-- Blog post #6 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel no-border overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="javascript:void(0);" class="btn btn-danger"><i class="ico-heart6"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="{{ site.assets }}image/background/blog/placeholder.jpg" data-src="{{ site.assets }}image/background/blog/blog5.jpg" alt="Photo" height="230px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+                                <!-- Content -->
+                                <section class="panel-body">
+                                    <!-- heading -->
+                                    <h4 class="section-title font-alt mt0 ellipsis">Vivamus nibh dolor, nonummy ac, feugiat non, lobortis quis, pede.</h4>
+                                    <!--/ heading -->
+
+                                    <!-- text -->
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat&#8230;</p>
+                                    <!--/ text -->
+
+                                    <!-- Meta & button -->
+                                    <!-- meta -->
+                                    <p class="meta mb15">
+                                        <a href="javascript:void(0);">Jul 15, 2013</a><!-- date -->
+                                        <span class="text-muted mr5 ml5">&#8226;</span>
+                                        <span class="text-muted">By </span><a href="javascript:void(0);">Glenna Espinoza</a><!-- author -->
+                                    </p>
+                                    <!--/ meta -->
+                                    <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+                                    <!-- Meta & button -->
+                                </section>
+                                <!--/ Content -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #6 -->
+
+                        <!-- Blog post #7 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel no-border overflow-hidden">
+                                <!-- Content -->
+                                <section class="panel-body">
+                                    <!-- heading -->
+                                    <h4 class="section-title font-alt mt0 ellipsis">Fusce mollis. Duis sit amet diam eu</h4>
+                                    <!--/ heading -->
+
+                                    <!-- text -->
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat&#8230;</p>
+                                    <!--/ text -->
+
+                                    <!-- Meta & button -->
+                                    <!-- meta -->
+                                    <p class="meta mb15">
+                                        <a href="javascript:void(0);">June 21, 2014</a><!-- date -->
+                                        <span class="text-muted mr5 ml5">&#8226;</span>
+                                        <span class="text-muted">By </span><a href="javascript:void(0);">Alex Fabrigas</a><!-- author -->
+                                    </p>
+                                    <!--/ meta -->
+                                    <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+                                    <!-- Meta & button -->
+                                </section>
+                                <!--/ Content -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #7 -->
+                    </div>
+                    <!--/ END Row -->
+                </div>
+            </section>
+            <!--/ END Blog Content -->

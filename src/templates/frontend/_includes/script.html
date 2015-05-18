@@ -1,0 +1,14 @@
+<!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- Application and vendor script : mandatory -->
+        <script type="text/javascript" src="{{ site.assets }}javascript/vendor.js"></script>
+        <script type="text/javascript" src="{{ site.assets }}javascript/core.js"></script>
+        <script type="text/javascript" src="{{ site.assets }}javascript/frontend/app.js"></script>
+        <!--/ Application and vendor script : mandatory -->
+
+        <!-- Plugins and page level script : optional -->
+        <script type="text/javascript" src="{{ site.assets }}plugins/smoothscroll/js/smoothscroll.js"></script>
+        {% for item in page.externaljs %}<script type="text/javascript" src="{{item}}"></script>
+        {% endfor %}{% for item in page.pluginsjs %}<script type="text/javascript" src="{{ site.assets }}{{item}}"></script>
+        {% endfor %}{% for item in page.pagejs %}<script type="text/javascript" src="{{ site.assets }}{{item}}"></script>
+        {% endfor %}<!--/ Plugins and page level script : optional -->
+        <!--/ END JAVASCRIPT SECTION -->

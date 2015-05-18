@@ -1,0 +1,14 @@
+# Meta
+name:         Adminre - Frontend
+description:  Adminre is a clean and flat backend and frontend theme build with Twitter bootstrap
+version:      1.3.0
+author:       JohnPozy
+authorurl:    http://themeforest.net/user/JohnPozy
+email:        pampersdry@gmail.com
+
+# Path
+destination:  ../../gh_frontend
+assets:       ../
+
+# Exclude
+exclude:      []
