@@ -1,0 +1,247 @@
+---
+layout: default
+category: shop
+menu: default
+submenu: 
+pluginscss: [
+    "plugins/layerslider/css/layerslider.css",
+    "plugins/touchspin/css/touchspin.css"
+]
+pluginsjs: [
+    "plugins/layerslider/js/greensock.js",
+    "plugins/layerslider/js/layerslider.transitions.js",
+    "plugins/layerslider/js/layerslider.kreaturamedia.jquery.js",
+    "plugins/touchspin/js/jquery.bootstrap-touchspin.js"
+]
+pagejs: [
+    "javascript/frontend/shop/shop-item-detail.js"
+]
+---
+
+<!-- START page header -->
+            <section class="page-header page-header-block nm">
+                <!-- pattern -->
+                <div class="pattern pattern9"></div>
+                <!--/ pattern -->
+                <div class="container pt15 pb15">
+                    <div class="page-header-section">
+                        <h4 class="title">Shop Item Detail</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="javascript:void(0);">Shop</a></li>
+                                <li class="active">Item Detail</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+            <!--/ END page header -->
+
+            <!-- START Item Detail -->
+            <section class="section bgcolor-white">
+                <div class="container">
+                    <!-- START row -->
+                    <div class="row">
+                        <!-- START Carousel -->
+                        <div class="col-md-6">
+                            <div id="layerslider" style="width:100%; height:550px;">
+                                <!-- slide 1 -->
+                                <div class="ls-slide" data-ls="transition2d:73;">
+                                    <img src="{{ site.assets }}image/shop/item-detail1.jpg" class="ls-bg" alt="">
+                                </div>
+                                <!--/ slide 1 -->
+
+                                <!-- slide 2 -->
+                                <div class="ls-slide" data-ls="transition2d:73;">
+                                    <img src="{{ site.assets }}image/shop/item-detail2.jpg" class="ls-bg" alt="">
+                                </div>
+                                <!--/ slide 2 -->
+
+                                <!-- slide 3 -->
+                                <div class="ls-slide" data-ls="transition2d:73;">
+                                    <img src="{{ site.assets }}image/shop/item-detail3.jpg" class="ls-bg" alt="">
+                                </div>
+                                <!--/ slide 3 -->
+
+                                <!-- slide 4 -->
+                                <div class="ls-slide" data-ls="transition2d:73;">
+                                    <img src="{{ site.assets }}image/shop/item-detail4.jpg" class="ls-bg" alt="">
+                                </div>
+                                <!--/ slide 4 -->
+                            </div>
+                            <div class="mb25 visible-xs visible-sm"></div>
+                        </div>
+                        <!--/ END Carousel -->
+
+                        <!-- START Detail -->
+                        <div class="col-md-6">
+                            <h3 class="section-title font-alt mt0">Faux Lapel Blazer</h3>
+                            <div class="clearfix mb15">
+                                <h4 class="section-title font-alt text-muted nm pull-left" style="text-decoration:line-through;">$119.00</h4>
+                                <h4 class="section-title font-alt text-primary nm ml15 pull-left">$59.00</h4>
+                            </div>
+                            <div class="mb15">
+                                <i class="ico-star6 text-primary"></i>
+                                <i class="ico-star6 text-primary"></i>
+                                <i class="ico-star6 text-primary"></i>
+                                <i class="ico-star6 text-primary"></i>
+                                <i class="ico-star5 text-primary"></i>
+                            </div>
+
+                            <hr><!-- horizontal line -->
+
+                            <p class="mb15">Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                            <p class="mb15">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+
+                            <ul class="list-unstyled nm">
+                                <li class="mb10"><i class="ico-checkmark3 fsize18 text-muted"></i>&nbsp;&nbsp;&nbsp;Polyblend</li>
+                                <li class="mb10"><i class="ico-checkmark3 fsize18 text-muted"></i>&nbsp;&nbsp;&nbsp;Collar stand</li>
+                                <li class="mb10"><i class="ico-checkmark3 fsize18 text-muted"></i>&nbsp;&nbsp;&nbsp;Slim fit</li>
+                                <li><i class="ico-checkmark3 fsize18 text-muted"></i>&nbsp;&nbsp;&nbsp;Inner lining</li>
+                            </ul>
+
+                            <hr><!-- horizontal line -->
+
+                            <form name="add-to-cart">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Colors</label>
+                                            <select name="type" class="form-control">
+                                                <option value="">Select</option>
+                                                <option value="1">Blue</option>
+                                                <option value="2">Green</option>
+                                                <option value="3">Red</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">Sizes</label>
+                                            <select name="type" class="form-control">
+                                                <option value="">Select</option>
+                                                <option value="1">S</option>
+                                                <option value="2">M</option>
+                                                <option value="3">L</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">Quantity</label>
+                                            <input type="text" value="" name="quantity">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary"><i class="ico-cart4"></i> Add to cart</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--/ END Detail -->
+                    </div>
+                    <!--/ END row -->
+
+                    <hr style="margin:60px 0;"><!-- horizontal line -->
+
+                    <!-- START row -->
+                    <div class="row">
+                        <!-- START Additional information -->
+                        <div class="col-md-12">
+                            <!-- tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#reviews" data-toggle="tab">Reviews (0)</a></li>
+                                <li><a href="#details" data-toggle="tab">Details</a></li>
+                                <li><a href="#policy" data-toggle="tab">Return Policy</a></li>
+                            </ul>
+                            <!--/ tabs -->
+
+                            <!-- tab content -->
+                            <div class="tab-content panel nm" style="border-bottom-width:1px;">
+                                <!-- reviews -->
+                                <div class="tab-pane active" id="reviews">
+                                    <div class="table-layout nm">
+                                        <div class="col-md-6">
+                                            <div class="pa15">
+                                                <p class="lead nm text-center text-muted">No review yet, Give one!</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <form name="form-review">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <label class="control-label">Name <span class="text-danger">*</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <input type="text" name="fname" class="form-control" placeholder="First">
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" name="lname" class="form-control" placeholder="Last">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">If you are a member, please enter your member number here:</label>
+                                                    <input type="text" name="member" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Your Review <span class="text-danger">*</span></label>
+                                                    <textarea class="form-control" rows="6"></textarea>
+                                                </div>
+                                                <div class="form-group mb0">
+                                                    <button class="btn btn-success">Send</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ reviews -->
+
+                                <!-- details -->
+                                <div class="tab-pane" id="details">
+                                    <div class="row mb15">
+                                        <div class="col-sm-3"><strong>SKU</strong></div>
+                                        <div class="col-sm-9">SU5133756EN</div>
+                                    </div>
+                                    <div class="row mb15">
+                                        <div class="col-sm-3"><strong>Colour</strong></div>
+                                        <div class="col-sm-9">Grey</div>
+                                    </div>
+                                    <div class="row mb15">
+                                        <div class="col-sm-3"><strong>Care label</strong></div>
+                                        <div class="col-sm-9">
+                                            Hand wash only at max temperature of 40°C, Do not bleach, Iron on low, Delicate dry clean, Wash dark colours separately in cold water, Line dry inside out in shade
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"><strong>Composition</strong></div>
+                                        <div class="col-sm-9">70% Polyester &amp; 30% Viscose</div>
+                                    </div>
+                                </div>
+                                <!--/ details -->
+
+                                <!-- policy -->
+                                <div class="tab-pane" id="policy">
+                                    <p class="mb15">Enjoy the flexibility of our 30-days free returns policy! Simply pack the item; with its original packaging and tags, and the return slip into our store delivery package. Then, simply drop the package off at your nearest post office.</p>
+                                    <p class="nm">For more details, please see our FAQs</p>
+                                </div>
+                                <!--/ policy -->
+                            </div>
+                            <!--/ tab content -->
+                        </div>
+                        <!--/ END Additional information -->
+                    </div>
+                    <!--/ END row -->
+                </div>
+            </section>
+            <!--/ END Item Detail -->
+
+            <!-- START Related Product -->
+            <section class="section">
+                {% include content/related-product.html %}
+            </section>
+            <!--/ END Related Product -->

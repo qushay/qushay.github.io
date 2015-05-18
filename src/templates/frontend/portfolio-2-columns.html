@@ -1,0 +1,283 @@
+---
+layout: default
+category: portfolio
+menu: 2 columns
+submenu: 
+pluginscss: [
+    "plugins/magnific/css/magnific.css",
+    "plugins/owl/css/owl-carousel.css"
+]
+pluginsjs: [
+    "plugins/magnific/js/jquery.magnific-popup.js",
+    "plugins/owl/js/owl.carousel.js",
+    "plugins/shuffle/js/jquery.shuffle.js"
+]
+pagejs: [
+    "javascript/frontend/pages/portfolio.js"
+]
+---
+
+<!-- START page header -->
+            <section class="page-header page-header-block nm">
+                <!-- pattern -->
+                <div class="pattern pattern9"></div>
+                <!--/ pattern -->
+                <div class="container pt15 pb15">
+                    <div class="page-header-section">
+                        <h4 class="title">Portfolio 2 Columns</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="javascript:void(0);">Portfolio</a></li>
+                                <li class="active">2 Columns</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+            <!--/ END page header -->
+
+            <!-- START Portfolio Content -->
+            <section class="section bgcolor-white">
+                <div class="container">
+                    <!-- START Section Header -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-header text-center">
+                                <h1 class="section-title font-alt mb25">Our Portfolio</h1>
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <div class="btn-group" id="shuffle-filter">
+                                            <button class="btn btn-default" data-group="people">People</button>
+                                            <button class="btn btn-default" data-group="creative">Creative</button>
+                                            <button class="btn btn-default" data-group="business">Business</button>
+                                            <button class="btn btn-default" data-group="building">Building</button>
+                                            <button class="btn btn-default" data-group="illustration">Illustration</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ END Section Header -->
+
+                    <!-- START row -->
+                    <div class="row" id="shuffle-grid">
+                        <div class="col-sm-6 shuffle" data-groups='["creative", "people"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="{{ site.assets }}image/portfolio/portfolio1.jpg" class="btn btn-default magnific" title="Happy kid playing with toy"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="{{ site.assets }}image/portfolio/placeholder.jpg" data-src="{{ site.assets }}image/portfolio/portfolio1.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0">Happy kid playing</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Creative ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">People</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-6 shuffle" data-groups='["business", "illustration", "building"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="{{ site.assets }}image/portfolio/portfolio2.jpg" class="btn btn-default magnific" title="Online shopping flat illustration concept"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="{{ site.assets }}image/portfolio/placeholder.jpg" data-src="{{ site.assets }}image/portfolio/portfolio2.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0">Online shopping illustration</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Business</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-6 shuffle" data-groups='["business", "building"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="{{ site.assets }}image/portfolio/portfolio3.jpg" class="btn btn-default magnific" title="Construction"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="{{ site.assets }}image/portfolio/placeholder.jpg" data-src="{{ site.assets }}image/portfolio/portfolio3.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0">Construction tools</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Building ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">Business</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-6 shuffle" data-groups='["illustration", "creative"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="{{ site.assets }}image/portfolio/portfolio4.jpg" class="btn btn-default magnific" title="Travel"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="{{ site.assets }}image/portfolio/placeholder.jpg" data-src="{{ site.assets }}image/portfolio/portfolio4.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0">Travel Toon</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Illustration ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">Creative</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-6 shuffle" data-groups='["illustration", "creative"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="{{ site.assets }}image/portfolio/portfolio5.jpg" class="btn btn-default magnific" title="Cooking Ingredients"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="{{ site.assets }}image/portfolio/placeholder.jpg" data-src="{{ site.assets }}image/portfolio/portfolio14.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0">Cooking Ingredients</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Cooking ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">Ingredients</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-6 shuffle" data-groups='["building", "people"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="{{ site.assets }}image/portfolio/portfolio6.jpg" class="btn btn-default magnific" title="Bridge"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="{{ site.assets }}image/portfolio/placeholder.jpg" data-src="{{ site.assets }}image/portfolio/portfolio6.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0">Bridge Building</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Building ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">People</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ END row -->
+                </div>
+            </section>
+            <!--/ END Portfolio Content -->
+
+            <!-- START Featured Portfolio -->
+            <section class="section">
+                {% include content/featured-portfolio.html %}
+            </section>
+            <!--/ END Featured Portfolio -->

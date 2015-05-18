@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<!-- 
+TEMPLATE NAME : Adminre - frontend
+VERSION : 1.3.0
+AUTHOR : JohnPozy
+AUTHOR URL : http://themeforest.net/user/JohnPozy
+EMAIL : pampersdry@gmail.com
+LAST UPDATE: 2015/01/05
+
+** A license must be purchased in order to legally use this template for your project **
+** PLEASE SUPPORT ME. YOUR SUPPORT ENSURE THE CONTINUITY OF THIS PROJECT **
+-->
+<html class="frontend">
+    <!-- START Head -->
+    <head>
+        <!-- START META SECTION -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Adminre - frontend</title>
+        <meta name="author" content="pampersdry.info">
+        <meta name="description" content="Adminre is a clean and flat backend and frontend theme build with twitter bootstrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../image/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../image/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../image/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../image/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../image/favicon.ico">
+        <!--/ END META SECTION -->
+
+        <!-- START STYLESHEETS -->
+        <!-- Plugins stylesheet : optional -->
+        <link rel="stylesheet" href="../plugins/magnific/css/magnific.css">
+        <link rel="stylesheet" href="../plugins/owl/css/owl-carousel.css">
+        <!--/ Plugins stylesheet : optional -->
+
+        <!-- Application stylesheet : mandatory -->
+        <link rel="stylesheet" href="../stylesheet/bootstrap.css">
+        <link rel="stylesheet" href="../stylesheet/layout.css">
+        <link rel="stylesheet" href="../stylesheet/uielement.css">
+        <link rel="stylesheet" href="../stylesheet/themes/layouts/fixed-header.css">
+        <!--/ Application stylesheet -->
+
+        <!-- modernizr script -->
+        <script type="text/javascript" src="../plugins/modernizr/js/modernizr.js"></script>
+        <!--/ modernizr script -->
+        <!-- END STYLESHEETS -->
+    </head>
+    <!--/ END Head -->
+
+    <!-- START Body -->
+    <body>
+        <!-- START Template Header -->
+        <header id="header" class="navbar">
+            <div class="container">
+                <!-- START navbar header -->
+                <div class="navbar-header navbar-header-transparent">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="javascript:void(0);">
+                        <span class="logo-figure" style="margin-left:-4px;"></span>
+                        <span class="logo-text"></span>
+                    </a>
+                    <!--/ Brand -->
+                </div>
+                <!--/ END navbar header -->
+
+                <!-- START Toolbar -->
+                <div class="navbar-toolbar clearfix">
+                    <!-- START Left nav -->
+                    <ul class="nav navbar-nav">
+                        <!-- Navbar collapse: This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                        <li class="navbar-main navbar-toggle">
+                            <a href="javascript:void(0);" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="meta">
+                                    <span class="icon"><i class="ico-paragraph-justify3"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <!--/ Navbar collapse -->
+                    </ul>
+                    <!--/ END Left nav -->
+
+                    <!-- START navbar form -->
+                    <div class="navbar-form navbar-left dropdown" id="dropdown-form">
+                        <form action="" role="search">
+                            <div class="has-icon">
+                                <input type="text" class="form-control input-lg" placeholder="Search this site...">
+                                <i class="ico-search form-control-icon"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- START navbar form -->
+
+                    <!-- START Right nav -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Search form toggler -->
+                        <li>
+                            <a href="javascript:void(0);" data-toggle="dropdown" data-target="#dropdown-form">
+                                <span class="meta">
+                                    <span class="icon"><i class="ico-search"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <!--/ Search form toggler -->
+
+                        <!-- Shopping cart dropdown -->
+                        <li class="dropdown custom" id="header-dd-cart">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="meta">
+                                    <span class="icon"><i class="ico-cart4"></i></span>
+                                    <span class="badge badge-primary pull-right">3</span>
+                                </span>
+                            </a>
+
+                            <!-- Dropdown menu -->
+                            <div class="dropdown-menu" role="menu">
+                                <!--<div class="dropdown-header">
+                                    <span class="title">Shopping Cart <span class="count"></span></span>
+                                    <span class="option text-right"><a href="javascript:void(0);">Checkout</a></span>
+                                </div>-->
+                                <div class="dropdown-body slimscroll">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner spinner16"></span></div>
+                                    <!--/ indicator -->
+
+                                    <!-- Item list -->
+                                    <div class="panel panel-minimal mb0">
+                                        <ul class="list-group">
+                                            <li class="list-group-item pt20 pb20">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <h5 class="semibold ellipsis">Long pants (x2)</h5>
+                                                    </div>
+                                                    <div class="col-xs-5">
+                                                        <h5 class="semibold text-info pull-left">$21.50</h5>
+                                                        <a href="#" class="pull-right text-muted"><i class="ico-close2"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item pt20 pb20">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <h5 class="semibold ellipsis">Awesome sandal (x4)</h5>
+                                                    </div>
+                                                    <div class="col-xs-5">
+                                                        <h5 class="semibold text-info pull-left">$62.00</h5>
+                                                        <a href="#" class="pull-right text-muted"><i class="ico-close2"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item pt20 pb20">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <h5 class="semibold ellipsis">Glove (x1)</h5>
+                                                    </div>
+                                                    <div class="col-xs-5">
+                                                        <h5 class="semibold text-info pull-left">$4.00</h5>
+                                                        <a href="#" class="pull-right text-muted"><i class="ico-close2"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--/ Item list -->
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="row">
+                                        <div class="col-xs-5">
+                                            <h4 class="ellipsis font-alt text-success" style="margin-top:7px;">$87.00</h4>
+                                        </div>
+                                        <div class="col-xs-7 text-right">
+                                            <a href="#" class="btn btn-primary">Check Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Dropdown menu -->
+                        </li>
+                        <!--/ Shopping cart dropdown -->
+                    </ul>
+                    <!--/ END Right nav -->
+
+                    <!-- START nav collapse -->
+                    <div class="collapse navbar-collapse navbar-collapse-alt" id="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle dropdown-hover" data-toggle="dropdown">
+                                    <span class="meta">
+                                        <span class="text">HOME</span>
+                                        <span class="caret"></span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-alt">
+                                    <li><a href="index.html">Layer Slider</a></li>
+                                    <li><a href="index2.html">Parallax Background</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle dropdown-hover" data-toggle="dropdown">
+                                    <span class="meta">
+                                        <span class="text">PAGES</span>
+                                        <span class="caret"></span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-alt">
+                                    <li><a href="page-about.html">About Us</a></li>
+                                    <li><a href="page-contact.html">Contact Us</a></li>
+                                    <li><a href="page-left-sidebar.html">Left Sidebar</a></li>
+                                    <li><a href="page-right-sidebar.html">Right Sidebar</a></li>
+                                    <li><a href="page-account-register.html">Account Register</a></li>
+                                    <li><a href="page-login.html">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle dropdown-hover" data-toggle="dropdown">
+                                    <span class="meta">
+                                        <span class="text">BLOG</span>
+                                        <span class="caret"></span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-alt">
+                                    <li><a href="blog-large.html">Large</a></li>
+                                    <li><a href="blog-medium.html">Medium</a></li>
+                                    <li><a href="blog-single.html">Single</a></li>
+                                    <li><a href="blog-left-sidebar.html">Left sidebar</a></li>
+                                    <li><a href="blog-right-sidebar.html">Right sidebar</a></li>
+                                    <li><a href="blog-masonry.html">Masonry</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle dropdown-hover" data-toggle="dropdown">
+                                    <span class="meta">
+                                        <span class="text">PORTFOLIO</span>
+                                        <span class="caret"></span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-alt">
+                                    <li><a href="portfolio-2-columns.html">2 Columns</a></li>
+                                    <li><a href="portfolio-3-columns.html">3 Columns</a></li>
+                                    <li><a href="portfolio-4-columns.html">4 Columns</a></li>
+                                    <li><a href="portfolio-single.html">Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle dropdown-hover" data-toggle="dropdown">
+                                    <span class="meta">
+                                        <span class="text">SHOP</span>
+                                        <span class="caret"></span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-alt">
+                                    <li><a href="shop.html">Default</a></li>
+                                    <li><a href="shop-item-detail.html">Item detail</a></li>
+                                    <li><a href="shop-left-sidebar.html">Left sidebar</a></li>
+                                    <li><a href="shop-right-sidebar.html">Right sidebar</a></li>
+                                    <li><a href="shop-shopping-cart.html">Shopping cart</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ END nav collapse -->
+                </div>
+                <!--/ END Toolbar -->
+            </div>
+        </header>
+        <!--/ END Template Header -->
+
+        <!-- START Template Main -->
+        <section id="main" role="main">
+            <!-- START page header -->
+            <section class="page-header page-header-block nm">
+                <!-- pattern -->
+                <div class="pattern pattern9"></div>
+                <!--/ pattern -->
+                <div class="container pt15 pb15">
+                    <div class="page-header-section">
+                        <h4 class="title">Portfolio 4 Columns</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="javascript:void(0);">Portfolio</a></li>
+                                <li class="active">4 Columns</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+            <!--/ END page header -->
+
+            <!-- START Portfolio Content -->
+            <section class="section bgcolor-white">
+                <div class="container">
+                    <!-- START Section Header -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-header text-center">
+                                <h1 class="section-title font-alt mb25">Our Portfolio</h1>
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <div class="btn-group" id="shuffle-filter">
+                                            <button class="btn btn-default" data-group="people">People</button>
+                                            <button class="btn btn-default" data-group="creative">Creative</button>
+                                            <button class="btn btn-default" data-group="business">Business</button>
+                                            <button class="btn btn-default" data-group="building">Building</button>
+                                            <button class="btn btn-default" data-group="illustration">Illustration</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ END Section Header -->
+
+                    <!-- START row -->
+                    <div class="row" id="shuffle-grid">
+                        <div class="col-sm-3 shuffle" data-groups='["creative", "people"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="../image/portfolio/portfolio1.jpg" class="btn btn-default magnific" title="Happy kid playing with toy"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio1.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0 ellipsis">Happy kid playing</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Creative ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">People</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-3 shuffle" data-groups='["business", "illustration", "building"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="../image/portfolio/portfolio2.jpg" class="btn btn-default magnific" title="Online shopping flat illustration concept"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio2.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0 ellipsis">Online shopping illustration</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Business</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-3 shuffle" data-groups='["business", "building"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="../image/portfolio/portfolio3.jpg" class="btn btn-default magnific" title="Construction"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio3.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0 ellipsis">Construction tools</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Building ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">Business</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-3 shuffle" data-groups='["illustration", "creative"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="../image/portfolio/portfolio4.jpg" class="btn btn-default magnific" title="Travel"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio4.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0 ellipsis">Travel Toon</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Illustration ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">Creative</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-3 shuffle" data-groups='["illustration", "creative"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="../image/portfolio/portfolio5.jpg" class="btn btn-default magnific" title="Cooking Ingredients"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio14.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0 ellipsis">Cooking Ingredients</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Cooking ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">Ingredients</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                        <div class="col-sm-3 shuffle" data-groups='["building", "people"]'>
+                            <div class="panel no-border overflow-hidden">
+                                <!-- thumbnail -->
+                                <div class="thumbnail nm">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="../image/portfolio/portfolio6.jpg" class="btn btn-default magnific" title="Bridge"><i class="ico-search"></i></a>
+                                                <a href="#" class="btn btn-success"><i class="ico-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio6.jpg" alt="Photo" width="100%" />
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                                <!-- Meta -->
+                                <div class="panel-footer" style="padding:25px;border:0;">
+                                    <h4 class="text-center mt0 ellipsis">Bridge Building</h4>
+                                    <div class="text-center">
+                                        <i class="ico-tags text-muted mr5"></i>
+                                        <a href="javascript:void(0);" class="text-muted">Building ,</a>
+                                        <a href="javascript:void(0);" class="text-muted">People</a>
+                                    </div>
+                                </div>
+                                <!--/ Meta -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ END row -->
+                </div>
+            </section>
+            <!--/ END Portfolio Content -->
+
+            <!-- START Featured Portfolio -->
+            <section class="section">
+                <div class="container">
+                    <!-- START Section Header -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-header text-center">
+                                <h1 class="section-title font-alt mb25">Featured Portfolio</h1>
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <h4 class="thin text-muted text-center">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ END Section Header -->
+
+                    <!-- carousel -->
+                    <div class="owl-carousel" id="lovely-client">
+                        <!-- portfolio #1 -->
+                        <div class="item text-center">
+                            <!-- thumbnail -->
+                            <div class="thumbnail nm">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-success"><i class="ico-new-tab"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio7.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail -->
+                            <!-- Meta -->
+                            <h5 class="text-center mb5">Old Camera</h5>
+                            <div class="text-center">
+                                <i class="ico-tags text-muted"></i>
+                                <a href="javascript:void(0);" class="text-muted">Old ,</a>
+                                <a href="javascript:void(0);" class="text-muted">Retro</a>
+                            </div>
+                            <!--/ Meta -->
+                        </div>
+                        <!--/ portfolio #1 -->
+                        <!-- portfolio #2 -->
+                        <div class="item text-center">
+                            <!-- thumbnail -->
+                            <div class="thumbnail nm">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-success"><i class="ico-new-tab"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio8.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail -->
+                            <!-- Meta -->
+                            <h5 class="text-center mb5">Business Partnership</h5>
+                            <div class="text-center">
+                                <i class="ico-tags text-muted"></i>
+                                <a href="javascript:void(0);" class="text-muted">Business ,</a>
+                                <a href="javascript:void(0);" class="text-muted">People</a>
+                            </div>
+                            <!--/ Meta -->
+                        </div>
+                        <!--/ portfolio #2 -->
+                        <!-- portfolio #3 -->
+                        <div class="item text-center">
+                            <!-- thumbnail -->
+                            <div class="thumbnail nm">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-success"><i class="ico-new-tab"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio9.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail -->
+                            <!-- Meta -->
+                            <h5 class="text-center mb5">Sound Engineering</h5>
+                            <div class="text-center">
+                                <i class="ico-tags text-muted"></i>
+                                <a href="javascript:void(0);" class="text-muted">Audio ,</a>
+                                <a href="javascript:void(0);" class="text-muted">Technology</a>
+                            </div>
+                            <!--/ Meta -->
+                        </div>
+                        <!--/ portfolio #3 -->
+                        <!-- portfolio #4 -->
+                        <div class="item text-center">
+                            <!-- thumbnail -->
+                            <div class="thumbnail nm">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-success"><i class="ico-new-tab"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio11.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail -->
+                            <!-- Meta -->
+                            <h5 class="text-center mb5">Digital Marketing</h5>
+                            <div class="text-center">
+                                <i class="ico-tags text-muted"></i>
+                                <a href="javascript:void(0);" class="text-muted">Marketing ,</a>
+                                <a href="javascript:void(0);" class="text-muted">Illustration</a>
+                            </div>
+                            <!--/ Meta -->
+                        </div>
+                        <!--/ portfolio #4 -->
+                        <!-- portfolio #5 -->
+                        <div class="item text-center">
+                            <!-- thumbnail -->
+                            <div class="thumbnail nm">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-success"><i class="ico-new-tab"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio12.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail -->
+                            <!-- Meta -->
+                            <h5 class="text-center mb5">Time Is Money</h5>
+                            <div class="text-center">
+                                <i class="ico-tags text-muted"></i>
+                                <a href="javascript:void(0);" class="text-muted">Time ,</a>
+                                <a href="javascript:void(0);" class="text-muted">Valueable</a>
+                            </div>
+                            <!--/ Meta -->
+                        </div>
+                        <!--/ portfolio #5 -->
+                        <!-- portfolio #6 -->
+                        <div class="item text-center">
+                            <!-- thumbnail -->
+                            <div class="thumbnail nm">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-success"><i class="ico-new-tab"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio13.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail -->
+                            <!-- Meta -->
+                            <h5 class="text-center mb5">Old Factory</h5>
+                            <div class="text-center">
+                                <i class="ico-tags text-muted"></i>
+                                <a href="javascript:void(0);" class="text-muted">Old ,</a>
+                                <a href="javascript:void(0);" class="text-muted">Factory</a>
+                            </div>
+                            <!--/ Meta -->
+                        </div>
+                        <!--/ portfolio #6 -->
+                        <!-- portfolio #7 -->
+                        <div class="item text-center">
+                            <!-- thumbnail -->
+                            <div class="thumbnail nm">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <!-- toolbar overlay -->
+                                    <div class="overlay">
+                                        <div class="toolbar">
+                                            <a href="#" class="btn btn-success"><i class="ico-new-tab"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--/ toolbar overlay -->
+                                    <img data-toggle="unveil" src="../image/portfolio/placeholder.jpg" data-src="../image/portfolio/portfolio14.jpg" alt="Photo" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail -->
+                            <!-- Meta -->
+                            <h5 class="text-center mb5">Fresh Vegetables</h5>
+                            <div class="text-center">
+                                <i class="ico-tags text-muted"></i>
+                                <a href="javascript:void(0);" class="text-muted">Food ,</a>
+                                <a href="javascript:void(0);" class="text-muted">Yummy</a>
+                            </div>
+                            <!--/ Meta -->
+                        </div>
+                        <!--/ portfolio #7 -->
+                    </div>
+                    <!--/ carousel -->
+                </div>
+            </section>
+            <!--/ END Featured Portfolio -->
+
+            <!-- START To Top Scroller -->
+            <a href="#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+            <!--/ END To Top Scroller -->
+        </section>
+        <!--/ END Template Main -->
+
+        <!-- START Template Footer -->
+        <footer role="contentinfo" class="bgcolor-dark pt25">
+            <!-- container -->
+            <div class="container mb25">
+                <!-- row -->
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-4">
+                        <h4 class="font-alt mt0">ABOUT US</h4>
+                        <p>Adminre is a clean and flat backend and frontend theme build with Twitter bootstrap</p>
+                        <p> Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                        <a href="javascript:void(0);" class="text-primary">Learn More</a>
+                    </div>
+                    <div class="visible-sm visible-xs" style="margin-bottom:25px;"></div>
+                    <!--/ About -->
+
+                    <!-- Address + Social -->
+                    <div class="col-md-4" style="background: url('../image/others/map-vector.png') no-repeat center center;background-size: 100%;">
+                        <h4 class="font-alt mt0">ADDRESS</h4>
+                        <address>
+                            <strong>Twitter, Inc.</strong><br>
+                            795 Folsom Ave, Suite 600<br>
+                            San Francisco, CA 94107<br>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address>
+                        <h4 class="font-alt mt0">STAY CONNECT</h4>
+                        <a href="javascript:void(0);" class="text-muted mr15" data-toggle="tooltip" title="Facebook"><i class="ico-facebook2"></i></a>
+                        <a href="javascript:void(0);" class="text-muted mr15" data-toggle="tooltip" title="Twitter"><i class="ico-twitter2"></i></a>
+                        <a href="javascript:void(0);" class="text-muted mr15" data-toggle="tooltip" title="Vimeo"><i class="ico-vimeo"></i></a>
+                        <a href="javascript:void(0);" class="text-muted mr15" data-toggle="tooltip" title="Flickr"><i class="ico-flickr2"></i></a>
+                        <a href="javascript:void(0);" class="text-muted mr15" data-toggle="tooltip" title="Google+"><i class="ico-google-plus2"></i></a>
+                        <a href="javascript:void(0);" class="text-muted mr15" data-toggle="tooltip" title="Instagram"><i class="ico-instagram2"></i></a>
+                    </div>
+                    <div class="visible-sm visible-xs" style="margin-bottom:25px;"></div>
+                    <!--/ Address + Social -->
+
+                    <!-- Newsletter -->
+                    <div class="col-md-4">
+                        <h4 class="font-alt mt0">NEWS LETTER</h4>
+                        <form role="form">
+                            <div class="form-group">
+                                <p class="form-control-static">Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="newsletter_email" placeholder="Enter email">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Subscribe Now</button>
+                        </form>
+                    </div>
+                    <!--/ Newsletter -->
+                </div>
+                <!--/ row -->
+            </div>
+            <!--/ container -->
+
+            <!-- bottom footer -->
+            <div class="footer-bottom pt15 pb15 bgcolor-dark bgcolor-dark-darken10">
+                <!-- container -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <!-- copyright -->
+                            <p class="nm text-muted">&copy; Copyright 2014 by <a href="javascript:void(0);" class="text-white">Adminre</a>. All Rights Reserved.</p>
+                            <!--/ copyright -->
+                        </div>
+                        <div class="col-sm-6 text-right hidden-xs">
+                            <a href="javascript:void(0);" class="text-white">Privacy Policy</a>
+                            <span class="ml5 mr5">&#8226;</span>
+                            <a href="javascript:void(0);" class="text-white">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+                <!--/ container -->
+            </div>
+            <!--/ bottom footer -->
+        </footer>
+        <!--/ END Template Footer -->
+
+        <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- Application and vendor script : mandatory -->
+        <script type="text/javascript" src="../javascript/vendor.js"></script>
+        <script type="text/javascript" src="../javascript/core.js"></script>
+        <script type="text/javascript" src="../javascript/frontend/app.js"></script>
+        <!--/ Application and vendor script : mandatory -->
+
+        <!-- Plugins and page level script : optional -->
+        <script type="text/javascript" src="../plugins/smoothscroll/js/smoothscroll.js"></script>
+        <script type="text/javascript" src="../plugins/magnific/js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript" src="../plugins/owl/js/owl.carousel.js"></script>
+        <script type="text/javascript" src="../plugins/shuffle/js/jquery.shuffle.js"></script>
+        <script type="text/javascript" src="../javascript/frontend/pages/portfolio.js"></script>
+        <!--/ Plugins and page level script : optional -->
+        <!--/ END JAVASCRIPT SECTION -->
+    </body>
+    <!--/ END Body -->
+</html>

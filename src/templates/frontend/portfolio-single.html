@@ -1,0 +1,86 @@
+---
+layout: default
+category: portfolio
+menu: single
+submenu: 
+pluginscss: [
+    "plugins/magnific/css/magnific.css",
+    "plugins/owl/css/owl-carousel.css"
+]
+pluginsjs: [
+    "plugins/magnific/js/jquery.magnific-popup.js",
+    "plugins/owl/js/owl.carousel.js",
+    "plugins/shuffle/js/jquery.shuffle.js"
+]
+pagejs: [
+    "javascript/frontend/pages/portfolio.js"
+]
+---
+
+<!-- START page header -->
+            <section class="page-header page-header-block nm">
+                <!-- pattern -->
+                <div class="pattern pattern9"></div>
+                <!--/ pattern -->
+                <div class="container pt15 pb15">
+                    <div class="page-header-section">
+                        <h4 class="title">Portfolio Single</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="javascript:void(0);">Portfolio</a></li>
+                                <li class="active">Single</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+            <!--/ END page header -->
+
+            <!-- START Portfolio Item Detail -->
+            <section class="section bgcolor-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb15">
+                            <h3 class="section-title font-alt mt0">Portfolio Item Information</h3>
+                            <p><span class="dropcap text-accent">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <ul class="list-unstyled pl15">
+                                <li class="mb5"><i class="ico-instagram text-success mr5"></i> Social Proof</li>
+                                <li class="mb5"><i class="ico-cloud-upload text-success mr5"></i> Cloud Hosting</li>
+                                <li class="mb5"><i class="ico-thumbs-up32 text-success mr5"></i> Best Quality Ever</li>
+                                <li class="mb5"><i class="ico-phone4 text-success mr5"></i> 24 Hours Support</li>
+                            </ul>
+
+                            <p class="mb15">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <a href="javascript:void(0);" class="btn btn-success"><i class="ico-new-tab mr5"></i> Visit Project Homepage</a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <!-- Owl Carousel -->
+                            <div id="gallery-post" class="owl-carousel">
+                                <div class="image"><img src="{{ site.assets }}image/background/blog/blog5.jpg"></div>
+                                <div class="image"><img src="{{ site.assets }}image/background/blog/blog3.jpg"></div>
+                                <div class="image"><img src="{{ site.assets }}image/background/blog/blog4.jpg"></div>
+                            </div>
+                            <!--/ Owl Carousel -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/ END Portfolio Item Detail -->
+
+            <!-- START Featured Portfolio -->
+            <section class="section">
+                {% include content/featured-portfolio.html %}
+            </section>
+            <!--/ END Featured Portfolio -->

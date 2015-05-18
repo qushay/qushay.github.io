@@ -1,0 +1,13 @@
+<!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- Application and vendor script : mandatory -->
+        <script type="text/javascript" src="{{ site.assets }}javascript/vendor.js"></script>
+        <script type="text/javascript" src="{{ site.assets }}javascript/core.js"></script>
+        <script type="text/javascript" src="{{ site.assets }}plugins/prettify/js/prettify.js"></script>
+        <!--/ Application and vendor script : mandatory -->
+
+        <script type="text/javascript">
+            $(function () {
+                $('html').Core();
+                prettyPrint();
+            });
+        </script>
